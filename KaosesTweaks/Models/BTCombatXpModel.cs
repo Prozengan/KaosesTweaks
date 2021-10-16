@@ -109,7 +109,7 @@ namespace KaosesTweaks.Models
             {
                 if (party.IsMobile && party.MobileParty.LeaderHero != null)
                 {
-                    if (!attackerTroop.IsArcher && party.MobileParty.HasPerk(DefaultPerks.OneHanded.Trainer, true))
+                    if (!attackerTroop.IsRanged && party.MobileParty.HasPerk(DefaultPerks.OneHanded.Trainer, true))
                     {
                         xpToGain.AddFactor(DefaultPerks.OneHanded.Trainer.SecondaryBonus * 0.01f, DefaultPerks.OneHanded.Trainer.Name);
                     }
@@ -132,7 +132,7 @@ namespace KaosesTweaks.Models
                     {
                         xpToGain.AddFactor(DefaultPerks.OneHanded.LeadByExample.PrimaryBonus * 0.01f, DefaultPerks.OneHanded.LeadByExample.Name);
                     }
-                    if (attackerTroop.IsArcher && party.MobileParty.HasPerk(DefaultPerks.Crossbow.MountedCrossbowman, true))
+                    if (attackerTroop.IsRanged && party.MobileParty.HasPerk(DefaultPerks.Crossbow.MountedCrossbowman, true))
                     {
                         xpToGain.AddFactor(DefaultPerks.Crossbow.MountedCrossbowman.SecondaryBonus * 0.01f, DefaultPerks.Crossbow.MountedCrossbowman.Name);
                     }

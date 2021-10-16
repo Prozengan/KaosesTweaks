@@ -8,7 +8,6 @@ using System.Linq;
 using Helpers;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
-using TaleWorlds.Localization;
 using KaosesTweaks.Utils;
 using System.Reflection;
 
